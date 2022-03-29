@@ -1,7 +1,9 @@
 namespace ProjetoAgenciaDeTurismo.PacoteDeViagens
 {
-    public class Almoco
+    public class Almoco : ServicoOpcional
     {
-        
+        public Almoco(double valor) : base(valor)
+        {
+        }
     }
 }
