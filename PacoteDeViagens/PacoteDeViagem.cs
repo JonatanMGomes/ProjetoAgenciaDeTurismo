@@ -2,11 +2,11 @@ namespace ProjetoAgenciaDeTurismo.PacoteDeViagens
 {
     public class PacoteDeViagem
     {
-       public DateTime DataIda { get; set; } 
-       public DateTime DataVolta { get; set; }
-       public double ValorTotal { get; set; }
-       public List<ServicoOpcional> Opcionais { get; set; }
-       public List<PasseioLocal> Passeios { get; set; }
+       public DateTime DataIda { get; private set; } 
+       public DateTime DataVolta { get; private set; }
+       public double ValorTotal { get; private set; }
+       public List<ServicoOpcional> Opcionais { get; private set; }
+       public List<PasseioLocal> Passeios { get; private set; }
        public PacoteDeViagem(DateTime dataIda, DateTime dataVolta){
            DataIda = dataIda;
            DataVolta = dataVolta;
