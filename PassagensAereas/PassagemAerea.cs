@@ -32,7 +32,7 @@ namespace ProjetoAgenciaDeTurismo.PassagensAereas
             MalasParaDespachar = false;
         }
         public void GetResumo(){
-            Console.WriteLine($"Resumo da passagem: Nome: {Cliente.Nome}, Poltrona: {Poltrona} e Valor: {ValorDaPassagem}");
+            Console.WriteLine($"Resumo da passagem: Nome: {Cliente.RetornaPrimeiroNome()}, Poltrona: {Poltrona} e Valor: {ValorDaPassagem}");
         }
     }
 }
