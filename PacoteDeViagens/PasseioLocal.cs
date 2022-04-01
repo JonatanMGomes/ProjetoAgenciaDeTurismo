@@ -4,8 +4,8 @@ namespace ProjetoAgenciaDeTurismo.PacoteDeViagens
     {
         public double Valor { get; set; }
         public string Local { get; set; }
-        public DateTime Horario { get; set; }
-        public PasseioLocal(double valor, string local, DateTime horario){
+        public TimeOnly Horario { get; set; }
+        public PasseioLocal(double valor, string local, TimeOnly horario){
             Valor = valor;
             Local = local;
             Horario = horario;

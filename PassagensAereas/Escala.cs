@@ -2,10 +2,10 @@ namespace ProjetoAgenciaDeTurismo.PassagensAereas
 {
     public class Escala
     {
-        public DateTime Duracao { get; private set;}
+        public TimeOnly Duracao { get; private set;}
         public string LocalDaEscala { get; private set;}
-        public DateTime HorarioDaChegada { get; private set;}
-        public Escala(DateTime duracao, string localDaEscala, DateTime horarioDaChegada){
+        public TimeOnly HorarioDaChegada { get; private set;}
+        public Escala(TimeOnly duracao, string localDaEscala, TimeOnly horarioDaChegada){
             Duracao = duracao;
             LocalDaEscala = localDaEscala;
             HorarioDaChegada = horarioDaChegada;
