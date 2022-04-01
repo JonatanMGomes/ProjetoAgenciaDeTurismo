@@ -72,6 +72,10 @@ namespace ProjetoAgenciaDeTurismo
                 Console.WriteLine($"Total atualizado: {ValorTotalCarrinho}, seu desconto foi de: {desconto}");
             }
         }
+        public void FinalizarCompra(){
+            Console.WriteLine($"Valor total do seu carrinho: {ValorTotalCarrinho}, Forma de pagamento escolhida: {FormaDePagamento}");
+            Console.WriteLine($"Foram comprados: {PacotesDeViagem.Count()} Pacotes de Viagens. E {PassagensAereas.Count()} Passagens Aéreas.");
+        }
 
     }
 }

@@ -17,7 +17,6 @@ namespace ProjetoAgenciaDeTurismo.PassagensAereas
             EmpresaAerea = empresaArea;
             Classe = classe;
             Poltrona = poltrona;
-            ValorDaPassagem = 500;
             HorarioDeEmbarque = horarioDeEmbarque;
             DataDaPassagem = dataDaPassagem;
             MalasParaDespachar = false;
@@ -30,6 +29,14 @@ namespace ProjetoAgenciaDeTurismo.PassagensAereas
         public void RemoverMalaParaDespachar()
         {
             MalasParaDespachar = false;
+        }
+        public void CalcularValorPassagem(){
+            double valorBase = 500;
+            valorBase = valorBase + (Voo.EscalasDoVoo.Count()*100);
+            if(MalasParaDespachar == true){
+                valorBase = valorBase + 150;
+            }
+            ValorDaPassagem = valorBase;
         }
         public void GetResumo(){
             Console.WriteLine($"Resumo da passagem: Nome: {Cliente.RetornaPrimeiroNome()}, Poltrona: {Poltrona} e Valor: {ValorDaPassagem}");
